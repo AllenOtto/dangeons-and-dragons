@@ -7,9 +7,9 @@ async function getFetch() {
             const res = await fetch(`https://www.dnd5eapi.co/api/spells/${userInput}`)
             const jsonData = await res.json();
             console.log(jsonData);
-            // let randClass = Math.floor(Math.random() * jsonData.classes.length)
             let randSubclass = Math.floor(Math.random() * jsonData.subclasses.length)
-            console.log(randSubclass);
+            console.log(randSubclass)
+            console.log(randSubclass)
             document.querySelector('h2').innerHTML = jsonData.name
             const UlListOfClasses = document.createElement('ul')
             for(let i = 0; i < jsonData.classes.length; i++) {
