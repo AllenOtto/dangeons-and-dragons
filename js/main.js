@@ -9,7 +9,6 @@ async function getFetch() {
             console.log(jsonData);
             let randSubclass = Math.floor(Math.random() * jsonData.subclasses.length)
             console.log(randSubclass)
-            console.log(randSubclass)
             document.querySelector('h2').innerHTML = jsonData.name
             const UlListOfClasses = document.createElement('ul')
             for(let i = 0; i < jsonData.classes.length; i++) {
