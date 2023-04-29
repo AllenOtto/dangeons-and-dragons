@@ -11,8 +11,25 @@ body {
 
 .container {
     width: 30%;
+    min-width: 350px;
+    height: 100vh;
     text-align: center;
-    margin: 100px auto;
+    margin: 60px auto;
+}
+
+input {
+    padding: .6em;
+}
+
+button {
+    padding: .5em 1.5em;
+    font-weight: bold;
+}
+
+p {
+    font-size: 1.2em;
+    background-color: rgba(0, 0, 0, .75);
+    line-height: 1.5em;
 }
 
 ul {
