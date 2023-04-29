@@ -1,7 +1,18 @@
+body {
+    color: #fff;
+    background-color: orangered;
+    background-image: url(../img/dnd2.jpg);
+    /* background-position: center; */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-blend-mode: multiply;
+    background-position-y: top;
+}
+
 .container {
     width: 30%;
     text-align: center;
-    margin: 0 auto;
+    margin: 100px auto;
 }
 
 ul {
