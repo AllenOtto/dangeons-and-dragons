@@ -10,7 +10,6 @@ async function getFetch() {
             // Request for data about a spell of choice
             const res = await fetch(`https://www.dnd5eapi.co/api/spells/${userInput}`)
             const jsonData = await res.json(); // Get data in json format
-            console.log(jsonData);
             // let randSubclass = Math.floor(Math.random() * jsonData.subclasses.length)
             // console.log(randSubclass)
             document.querySelector('h2').innerHTML = jsonData.name // Display the name of spell searched for
