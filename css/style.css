@@ -35,3 +35,8 @@ p {
 ul {
     list-style: none;
 }
+
+.footer {
+    display: flex;
+    justify-content: space-evenly;
+}

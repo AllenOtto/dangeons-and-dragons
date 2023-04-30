@@ -13,7 +13,7 @@ async function getFetch() {
             // console.log(randSubclass)
             document.querySelector('h2').innerHTML = jsonData.name // Display the name of spell searched for
             const ul = document.createElement('ul') // Create an unordered list
-            // For everly class item in 
+            // For everly object returned fetch the classes associated with it and display them in a list item
             for(let i = 0; i < jsonData.classes.length; i++) {
                 const li = document.createElement('li')
                 ul.append(li)
@@ -21,12 +21,13 @@ async function getFetch() {
                 document.querySelector('.classes-div').append(ul)
             }
 
-            const ull = document.createElement('ul')
+            // For everly object returned fetch the subclasses associated with it and display them in a list item
+            const ul2 = document.createElement('ul')
             for(let i = 0; i < jsonData.subclasses.length; i++) {
                 const li = document.createElement('li')
-                ul.append(li)
+                ul2.append(li)
                 li.innerText = jsonData.subclasses[i].name
-                document.querySelector('.subclasses-div').append(ul)
+                document.querySelector('.subclasses-div').append(ul2)
             }
 
             document.querySelector('p').innerHTML = jsonData.desc
