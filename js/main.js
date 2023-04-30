@@ -1,9 +1,9 @@
 document.querySelector('button').addEventListener('click', getFetch)
+document.querySelector('#close').addEventListener('click', close)
 
 async function getFetch() {
     try {
         let userInput = document.querySelector('input').value.toLowerCase()
-        console.log(userInput)
         
         // Check that there is some user input else ask for some
         if(userInput) {
@@ -41,4 +41,9 @@ async function getFetch() {
     } catch(err) {
         console.error(err)
     }
+}
+
+function close() {
+    const footerDiv = document.querySelector("#footer")
+    footerDiv.innerHTML = ""
 }
