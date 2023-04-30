@@ -19,6 +19,8 @@ body {
 
 input {
     padding: .6em;
+    border: none;
+    border-radius: 5px;
 }
 
 button {
@@ -36,7 +38,22 @@ ul {
     list-style: none;
 }
 
-.footer {
+#footer {
+    position: relative;
     display: flex;
     justify-content: space-evenly;
+    border: 3px solid white;
+    max-height: 250px;
+}
+
+#close {
+    position: absolute;
+    top: -20px;
+    right: -20px;
+    transition: all .3s ease;
+}
+
+#close:hover {
+    color: red;
+    cursor: pointer;
 }
